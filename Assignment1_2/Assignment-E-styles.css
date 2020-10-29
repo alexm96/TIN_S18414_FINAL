@@ -1,0 +1,23 @@
+.column {
+    float: left;
+    width: 50%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .outer-floated{
+    width: 400px;
+    
+}
+.floated-image{
+    float: left;
+    
+}
+.floated-image2{
+    float: right
+    
+}

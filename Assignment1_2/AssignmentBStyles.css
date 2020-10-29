@@ -1,0 +1,28 @@
+
+form * {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  background-color: lightgreen;
+  box-sizing: border-box;
+}
+input[type="radio"],label{
+  display: inline;
+  width:40%
+  
+}
+:required{
+  background-color: lightcoral;
+}
+
+input,textarea,select{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+  /* Add a background color to the submit button on mouse-over */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  input[type=reset]:hover {
+    background-color: #e61c1c;
+  }

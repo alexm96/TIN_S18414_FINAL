@@ -1,0 +1,16 @@
+p,h1,h2,h3{
+  font-family: 'Courier New', Courier, monospace;
+  color: black;
+}
+table{
+  border: 1px dotted salmon;
+}
+td,th{
+  border: 1px dashed blue;
+}
+A {
+  text-decoration: none;
+}
+ul {
+  list-style-type: square;
+}

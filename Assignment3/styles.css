@@ -7,16 +7,16 @@ header {
 header img{
     max-width: 40%;
 }
-#main-content{
-    display: flex;
-    justify-content: center;
-}
+
 #title-image{
     transform: rotate(2deg);
     box-shadow: 5px 5px grey;
     border-radius: 25px;
 }
-
+#main-content{
+    display: flex;
+    justify-content: center;
+}
 #gallery img{
     height: 100px;
     width:100px;

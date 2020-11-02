@@ -1,11 +1,14 @@
-header {
-    display: flex;
-    flex-direction: column;
-    
-    align-items: center;
+header *{
+   
+   border: green;
+   border-style: dashed;
+   text-align: center;
 }
 header img{
     max-width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 #title-image{
@@ -21,6 +24,7 @@ header img{
     display: grid;
     grid-template-columns: 200px auto;
     grid-template-areas: 
+   
       "gallery main "
   }
   

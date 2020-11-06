@@ -9,12 +9,17 @@ http.createServer(function (req, res) {
     const slug = parts.pathname
 
     if (slug in acceptedUrls) {
-        let accumulator = 1 - (slug === "/add" || slug === "/sub") // I both love and hate JS because this totally works 
+        let accumulator = undefined
         const operation = acceptedUrls[slug]
         for (queryItem in parts.query) {
             valueOfItem = parts.query[queryItem]
             if (valueOfItem.match(numberReg)) {
-                accumulator = operation(accumulator, Number(valueOfItem))
+                if(accumulator){
+                    accumulator = operation(accumulator, Number(valueOfItem))
+                }
+                else{
+                    accumulator=Number(valueOfItem)
+                }
                 res.write(`${String(queryItem)} :${valueOfItem} \n`)
             }
             else {

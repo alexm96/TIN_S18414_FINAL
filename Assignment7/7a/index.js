@@ -11,6 +11,7 @@ http.createServer(function (req, res) {
     if (slug in acceptedUrls) {
         let accumulator = undefined
         const operation = acceptedUrls[slug]
+        console.log(parts.query)
         for (queryItem in parts.query) {
             valueOfItem = parts.query[queryItem]
             if (valueOfItem.match(numberReg)) {

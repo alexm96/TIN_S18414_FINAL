@@ -1,0 +1,16 @@
+.students{
+    border: deeppink;
+    border-style: dashed;
+    width: 30%;
+}
+.studentInfo{
+    border: blue;
+    border-style: dashed;
+    background-color: grey;
+}
+
+
+.studentInfo{
+    margin :10px 
+}
+

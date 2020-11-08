@@ -1,0 +1,29 @@
+<html>
+<head>
+    <link rel="stylesheet" href="../styles/formdata.css">
+</head>
+
+<body>
+
+    <header>
+       
+    </header>
+
+  
+            <div class="students">
+                <% studentList.forEach(function(student) { %>
+                    <div class="studentInfo">
+                    <p>Firstname:<%= student.firstName %></p>
+                    <p>Lastname:<%= student.lastName %></p>
+                    <p>Student number:<%= student.id %></p>
+                </div>
+                    <% }); %>
+                
+            </div>
+     
+
+
+
+
+</body>
+</html>

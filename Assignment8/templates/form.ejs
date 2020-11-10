@@ -12,5 +12,9 @@
         <input type="text" name="sNumber" id="sNumber" value="S number">
         <input type="submit" value="Submit details">
     </form>
+    <% if(success){%>
+        <p>Succesfully added a new student!</p>
+        <p><a href="/formdata">Click here to see all students</a></p>
+        <%}%>
 </body>
 </html>

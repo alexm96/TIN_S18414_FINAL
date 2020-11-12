@@ -1,7 +1,7 @@
 header *{
    
-   border: green;
-   border-style: dashed;
+   
+
    text-align: center;
 }
 header img{
@@ -31,8 +31,7 @@ header img{
   #main-content #gallery {
     grid-row: gallery;
     grid-column: gallery;
-    border: green;
-    border-style: dashed;
+    
   }
   #main-content  #main-article{
     grid-row: main;
@@ -41,18 +40,12 @@ header img{
  
     grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
     grid-template-rows:auto;
-    border: red;
-    border-style: dashed;
+   
     column-gap: 10px;
   
     
   }
-  #main-content  #main-article  p{
-    
-    border: blue;
-    border-style: dashed;
-    
-  }
+ 
   #main-article  p span{
     margin:10px;
     color: hotpink;
@@ -78,8 +71,8 @@ header img{
         grid-row: main;
         grid-column: main;
         
-        border: red;
-        border-style: dashed;
+       
+       
         column-gap: 10px;
       
         

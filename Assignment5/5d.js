@@ -4,7 +4,7 @@ function Student(firstName,lastName,id,grades){
     this.id=id;
     this.grades=grades;
     this.printInfo=function(){
-        return this.firstName+" "+this.lastName+" "+(this.grades.reduce((x,y)=>x+y)/this.grades.length)
+        return this.firstName+" "+this.lastName+" "+(this.getAverageGrade())
     }
     this.setFullName= function (firstName,lastName){
         this.firstName=firstName;

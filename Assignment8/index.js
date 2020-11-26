@@ -17,7 +17,6 @@ app.get("/hello",(req,res)=>{
     res.send("Hello world")
 })
 const formControl=(req,res)=>{
-    
     const successVal=req.query.success    
     res.render((path.join(__dirname+'/templates/form.ejs')),{success:successVal})
 }

@@ -13,7 +13,6 @@ window.onload = function(){
     const xhr=new XMLHttpRequest()
     xhr.open("POST","/operation",true)
     xhr.setRequestHeader('Content-type', 'application/json');
-
     xhr.onload=function(){
       const responseObject=parseFloat(xhr.response)
       changeResult(responseObject)
@@ -27,7 +26,7 @@ window.onload = function(){
       document.querySelector("#result").innerHTML=responseObject
   }
   const manipulateForm=(event)=>{
-    const jsonToSend=createJson(event.target.parentNode)
+    const jsonToSend=createJson(event.target.parentNode) // since we need access to parent form to get other values (and listeners are attached to children)
     sendRequest(jsonToSend)
 
   }
@@ -36,12 +35,12 @@ window.onload = function(){
     const elements= selectElement.querySelectorAll("input,select")
     elements.forEach((element)=>{
       const typeOfElement=element.tagName 
-      if(typeOfElement==="INPUT"){
+      if(typeOfElement==="INPUT"){ // logic here is that the keyup action will fire as soon as a new value is entered, even if we dont lose focus
         element.addEventListener("keyup",manipulateForm)
       }
       else if (typeOfElement==="SELECT")
       {
-        element.addEventListener("change",manipulateForm)
+        element.addEventListener("change",manipulateForm) // simple change is fine for the select
       }
       
     })

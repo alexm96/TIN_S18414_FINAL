@@ -15,7 +15,7 @@ app.get("/",(req,res)=>{
   res.sendFile("index.html")
 })
 app.post('/operation', (req, res) => {
-  console.log(req.body)
+  
   if(acceptedOperations[req.body.operation] === undefined){
       const keys=[]
       for ( k in acceptedOperations) keys.push(k)

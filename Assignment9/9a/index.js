@@ -1,14 +1,19 @@
 const express = require('express')
 const bodyParser = require('body-parser')
+const { static } = require('express')
 
 
 const app = express()
+
 app.use(bodyParser.json())
 const port = 3000
-const acceptedOperations = { 'mult': (x, y) => x * y, "add": (x, y) => x + y, "div": (x, y) => x / y, "sub": (x, y) => x - y }
+const acceptedOperations = { '*': (x, y) => x * y, "+": (x, y) => x + y, "/": (x, y) => x / y, "-": (x, y) => x - y }
 
 
 app.use(express.static('public'))
+app.get("/",(req,res)=>{
+  res.sendFile("index.html")
+})
 app.post('/operation', (req, res) => {
   console.log(req.body)
   if(acceptedOperations[req.body.operation] === undefined){

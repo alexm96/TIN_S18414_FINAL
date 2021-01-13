@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Convert temp</h2>
+    <form action="/temp" method="post">
+    <input type="number" placeholder=0 name="toCalc">
+    <select name="from" id="from">
+        <option value="f">Fahrenheit</option>
+        <option value="k">Kelvin</option>
+        <option value="c">Celcius</option>
+      </select>
+      <a>-></a>
+      <select name="to" id="to">
+        <option value="f">Fahrenheit</option>
+        <option value="k">Kelvin</option>
+        <option value="c">Celcius</option>
+      </select>
+    <button type="submit">Evaluate</button>
+    </form>
+    <h2>Convert distance</h2>
+    <form action="/distance" method="post" >
+    <input type="number" name="toCalc" placeholder=0>
+    <select name="from" id="from">
+        <option value="m">Miles</option>
+        <option value="ki">Kilometres</option>
+      </select>
+      <a>-></a>
+      <select name="to" id="to">
+        <option value="m">Miles</option>
+        <option value="ki">Kilometres</option>
+      </select>
+    <button type="submit">Evaluate</button>
+    </form>
+</body>
+</html>
